@@ -17,7 +17,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/productos" element={<ItemListContainer />} />
-          {/* Ruta dinámica para los detalles del producto */}
+          {}
           <Route path="/productos/:itemId" element={<ItemDetailContainer />} />
         </Routes>
       </div>

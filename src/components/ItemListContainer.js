@@ -1,17 +1,13 @@
-// ItemListContainer.js
 import React from 'react';
-import products from './data'; // Importa el arreglo de productos
-import Item from './Items'; // Importa el componente Item
+import products from './data';
+import Items from './Items'; 
 
 const ItemListContainer = () => {
   return (
-    <div>
-      <h2>Productos</h2>
-      <div className="item-list">
-        {products.map((product) => (
-          <Item key={product.id} {...product} />
-        ))}
-      </div>
+    <div className="card-deck">
+      {products.map((product) => (
+        <Items key={product.id} {...product} />
+      ))}
     </div>
   );
 };
