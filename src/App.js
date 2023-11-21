@@ -1,24 +1,27 @@
-import React, { useState } from 'react';
-import Navbar from './components/Navbar';
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Import Routes instead of Switch
+import NavBar from './components/NavBar';
+import Home from './components/Home';
 import ItemListContainer from './components/ItemListContainer';
+import ItemDetailContainer from './components/ItemDetailContainer';
+
+
+
 
 function App() {
-  const brand = "Itento de E-Commerce";
-  const [categories, setCategories] = useState([
-    { name: "Inicio", content: "¡Bienvenido a nuestra tienda en línea!" },
-    { name: "Productos", content: "Aquí tenemos una selección de nuestros productos." },
-  ]);
-  const [selectedCategory, setSelectedCategory] = useState(categories[0].name);
-
-  const handleCategoryChange = (categoryName) => {
-    setSelectedCategory(categoryName);
-  };
-
   return (
-    <div className="App">
-      <Navbar brand={brand} categories={categories} onCategoryChange={handleCategoryChange} />
-      <ItemListContainer greeting={selectedCategory} category={selectedCategory} />
-    </div>
+    <Router>
+      <div>
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/productos" element={<ItemListContainer />} />
+          {/* Ruta dinámica para los detalles del producto */}
+          <Route path="/productos/:itemId" element={<ItemDetailContainer />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

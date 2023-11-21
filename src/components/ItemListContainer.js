@@ -1,36 +1,16 @@
+// ItemListContainer.js
 import React from 'react';
+import products from './data'; // Importa el arreglo de productos
+import Item from './Items'; // Importa el componente Item
 
-const ItemListContainer = ({ greeting, category }) => {
+const ItemListContainer = () => {
   return (
-    <div className="container">
-      <div className="row">
-        <div className="col">
-        {category === "Inicio" ? (
-            <div>
-              <h2>{greeting}</h2>
-              <p>
-                Bienvenido a la página de inicio. Este es un mensaje de bienvenida especial para la página de inicio.
-              </p>
-            </div>
-          ) : (
-            <h2>{}</h2>
-          )}
-          {category === "Productos" ? (
-            <div>
-              <h2>{greeting}</h2>
-              <p>
-                Ejemplo de Producto:
-              </p>
-              <div>
-                <h3>Disco SSD Kingston</h3>
-                <p>Disco de estado solido marca Kingston con una tasa de transferencia de 3000 mb/s</p>
-                <p>Precio: $15000.00</p>
-              </div>
-            </div>
-          ) : (
-            <h2>{}</h2>
-          )}
-        </div>
+    <div>
+      <h2>Productos</h2>
+      <div className="item-list">
+        {products.map((product) => (
+          <Item key={product.id} {...product} />
+        ))}
       </div>
     </div>
   );
