@@ -1,14 +1,13 @@
+// NavBar.js
 import React from 'react';
-import CartWidget from './CartWidget';
 import { Link } from 'react-router-dom';
 
-
-const NavBar = () => {
+const NavBar = ({ categories }) => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark"> {}
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container">
         <Link className="navbar-brand" to="/">
-          Nombre Tienda
+          Tienda
         </Link>
         <button
           className="navbar-toggler"
@@ -34,9 +33,6 @@ const NavBar = () => {
               </Link>
             </li>
           </ul>
-          <div className="ml-auto">
-            <CartWidget />
-          </div>
         </div>
       </div>
     </nav>

@@ -1,10 +1,10 @@
+
 const products = [
-    { id: 1, name: 'Pendrive Kingston 128 GB', description: 'Descripción del Producto 1', price: 6500, image: 'https://ibb.co/RhXf5QS'},
-    { id: 2, name: 'Pendrive Sandisk 128gb',description: 'Descripción del Producto 2', price: 5500, image: 'url_imagen_1.jpg'},
-    { id: 3, name: 'Pendrive Adata 128gb',description: 'Descripción del Producto 3', price: 5000, image: 'url_imagen_1.jpg'},
+    { id: 1, name: 'Disco SSD Kingston 500GB', description: 'Disco en estado solido marca Kingston de 500GB.', price: 25000, image: 'url_imagen_1.jpg', category: 'Almacenamiento' },
+    { id: 2, name: 'Asus Z790 Prime-A', description: 'Motherboard marca Asus, modelo Prime-A, apto para generaciones 13 y 14 de Intel.', price: 250000, image: 'url_imagen_2.jpg', category: 'Motherboards' },
+    { id: 3, name: 'Intel Core I7 14700k', description: 'Procesador de 14° generacion de Intel, modelo 14700k, tiene 14 nucleos y 28 hilos.', price: 650000, image: 'url_imagen_2.jpg', category: 'Procesadores' },
 
   ];
   
   export default products;
-  
   
