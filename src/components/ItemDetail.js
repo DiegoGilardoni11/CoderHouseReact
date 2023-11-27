@@ -1,4 +1,4 @@
-
+//ItemDetail
 import React from 'react';
 
 const ItemDetail = ({ id, name, description, precio }) => {

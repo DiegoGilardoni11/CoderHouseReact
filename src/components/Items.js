@@ -1,4 +1,4 @@
-
+//Items
 import React from 'react';
 
 const Items = ({ name, description, price, image, category }) => {

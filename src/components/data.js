@@ -1,4 +1,4 @@
-
+//Data
 const products = [
     { id: 1, name: 'Disco SSD Kingston 500GB', description: 'Disco en estado solido marca Kingston de 500GB.', price: 25000, image: 'url_imagen_1.jpg', category: 'Almacenamiento' },
     { id: 2, name: 'Asus Z790 Prime-A', description: 'Motherboard marca Asus, modelo Prime-A, apto para generaciones 13 y 14 de Intel.', price: 250000, image: 'url_imagen_2.jpg', category: 'Motherboards' },

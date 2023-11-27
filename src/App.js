@@ -6,9 +6,7 @@ import Home from './components/Home';
 import ItemListContainer from './components/ItemListContainer';
 import ItemDetailContainer from './components/ItemDetailContainer';
 import products from './components/data'; 
-
-
-
+//App
 function App() {
   const categories = [...new Set(products.map((product) => product.category))];
 

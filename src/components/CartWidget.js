@@ -1,3 +1,5 @@
+//CartWidget
+
 import React from 'react';
 
 const CartWidget = () => {
